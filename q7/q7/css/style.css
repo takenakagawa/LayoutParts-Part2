@@ -1,1 +1,30 @@
 @charset "UTF-8";
+
+.text-box {
+  width: 500px;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  background: #fad296;
+  border: solid 5px #815a0a;
+  border-radius: 40px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.text-box::before,.text-box::after {
+  content: "";
+  position: absolute;
+  border: 25px solid transparent;
+  left: 30px;
+}
+
+.text-box::before {
+  bottom: -48px;
+  border-top: 21px solid #815a0a;
+}
+
+.text-box::after {
+  bottom: -41px;
+  border-top: 21px solid #fad296;
+}
